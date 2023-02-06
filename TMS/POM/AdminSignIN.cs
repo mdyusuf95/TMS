@@ -21,6 +21,9 @@ namespace TMS.POM
         [FindsBy(How = How.Name, Using = "login")]
         private IWebElement singInbtn { get; set; }
 
+
+
+
         public AdminSignIN(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);

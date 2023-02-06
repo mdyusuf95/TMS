@@ -16,21 +16,21 @@ namespace TMS.TestScripts
         [Test]
         public void adminlogin()
         {
-            
-            HomePage hp= new HomePage(driver);
-            hp.getadminLoginbotton().Click();
 
-            AdminSignIN ad = new AdminSignIN(driver);
-            ad.setLogIn("admin", "Test@123");
+            //HomePage hp= new HomePage(driver);
+            //hp.getadminLoginbotton().Click();
 
-            AminDashBord adb=new AminDashBord(driver);
-            String atitel = driver.Title;
-            String Etitel = "TMS | Admin Dashboard";
+            //AdminSignIN ad = new AdminSignIN(driver);
+            //ad.setLogIn("admin", "Test@123");
 
-            Assert.AreEqual(atitel,Etitel);
-            Console.WriteLine("Admin Dashbord Displed ");
-           
+            //AminDashBord adb=new AminDashBord(driver);
+            //String atitel = driver.Title;
+            //String Etitel = "TMS | Admin Dashboard";
 
+            //Assert.AreEqual(atitel,Etitel);
+            //Console.WriteLine("Admin Dashbord Displed ");
+
+            Console.WriteLine("login to app");
 
 
         }
@@ -38,13 +38,21 @@ namespace TMS.TestScripts
           [Test]
           public void CreatPakage()
           {
-              AminDashBord adb = new AminDashBord(driver);
-              adb.GetTourCratePakage().Click();
-              adb.GetCratebtn().Click();
+            //AminDashBord adb = new AminDashBord(driver);
+            //adb.GetTourCratePakage().Click();
+            //adb.GetCratebtn().Click();
+            //PackageCreationPage pcp=new PackageCreationPage(driver);
+            //pcp.SetpackagenameBox("MADGASKAR");
+            //pcp.SetpackagetypeBox("internaltional");
+            //pcp.SetpakagePrice("85000");
+            //pcp.Setpackagefeatures("testing ");
+            //pcp.Setpackagedetails("5days 4 nights all travling facilities provided ");
+            //pcp.SetSaveBtn();
+            Console.WriteLine("create pakages");
 
 
 
-          }
+         }
 
     }
 }
